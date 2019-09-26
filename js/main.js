@@ -13,12 +13,11 @@ function checkForMatch(){
 	}
 } 
 
-function flipCard (cardId){
+function flipCard (cardId){				//Parameter 
 	if (cardsInPlay.lenght === 2) {
 		checkForMatch();
 	}
 }
-
 
 cardsInPlay.push(cards[0]);
 console.log("User flipped " + cards[0]); 
