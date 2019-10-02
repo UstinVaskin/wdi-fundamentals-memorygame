@@ -1,3 +1,4 @@
+
 var cards = [
   {
     rank: "queen",
@@ -47,10 +48,14 @@ function flipCard() {
   console.log("User Flipped " + cards[cardId].rank);
   cardsInPlay.push(cards[cardId].rank);
   this.setAttribute("src", cards[cardId].cardImage);
-  checkForMatch();
-  if (cardsInPlay.length === 2) {
+    if (cardsInPlay.length === 2) {
+        checkForMatch();
   }
+
+
 
   console.log(cards[cardId].suit);
   console.log(cards[cardId].cardImage);
 }
+
+ 
